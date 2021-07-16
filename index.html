@@ -51,6 +51,7 @@
             position:fixed;
             top:19px;
             left:6px;
+            z-index:2;
             width:80px;
             height:20px;
             background:#ff1800;
@@ -75,8 +76,29 @@
             position:absolute;
             left:0;
             top:0;
+            z-index:0;
         }
-
+        .slider-img>a>.slider01{
+            z-index:1;
+        }
+        .btn-page{
+            position:absolute;
+            z-index:2;
+            bottom:30px;
+            width:360px;
+            text-align:center;
+        }
+        .btn-page>span{
+            display:inline-block;
+            width:10px;
+            height:10px;
+            background:#ffffff;
+            border-radius:5px;
+            margin:0 2px;
+        }
+        .btn-page>.active{
+            background:#01c982;
+        }
         /* 슬라이더 끝 */
     </style>
 </head>
@@ -113,15 +135,46 @@
                 </a>
            </div>
            <div class="btn-page">
-               <span>원</span>
-               <span>원</span>
-               <span>원</span>
-               <span>원</span>
-               <span>원</span>
+               <span class="active"></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
            </div>
        </div>
        <div class="link-icons">
-           링크아이콘
+            <div class="line-icon01">
+                <a href="#">
+                    할리스몰 이미지
+                </a>
+                <a href="#">
+                    Hollys Mall
+                </a>
+            </div>
+            <div class="line-icon02">
+                <a href="#">
+                    메뉴 이미지
+                </a>
+                <a href="#">
+                    Menu
+                </a>
+            </div>
+            <div class="line-icon03">
+                <a href="#">
+                    스토어 이미지
+                </a>
+                <a href="#">
+                    Store
+                </a>
+            </div>
+            <div class="line-icon04">
+                <a href="#">
+                    멤버십 이미지
+                </a>
+                <a href="#">
+                    Membership
+                </a>
+            </div>           
        </div>
        <div class="banner">
            배너
