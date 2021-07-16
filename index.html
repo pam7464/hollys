@@ -9,6 +9,9 @@
         *{
             margin:0;
         }
+        img{
+            vertical-align:bottom;
+        }
         .wrap{
             width:360px;
             height:1768px;       
@@ -102,9 +105,12 @@
         /* 슬라이더 끝 */
 
         /* 링크아이콘들 시작 */
+        
         .link-icons{
             width:360px;
-            height:160px;
+            height:68px;
+            margin-top:46px;
+            margin-bottom:46px;
         }
         .link-icons>div{
             float:left;
@@ -114,20 +120,35 @@
         }
         .link-icons>div>a{
             display:block;
+            font-family:'Noto Sans KR';
+            font-weight:200;
+            font-size:12px;
+            color:#333333;
+            text-decoration:none;
+            width:78px;
+            text-align:center;
         }
         .line-icon01>a>img{
-            width:40px;
+            width:40px;           
         }
         .line-icon02>a>img{
             width:38px;
         }
         .line-icon03>a>img{
             width:51px;
+            margin-top:4px;
         }
         .line-icon04>a>img{
             width:52px;
+            margin-top:5px;
         }
         /* 링크아이콘들 끝 */
+
+        /* 배너스타일 시작 */
+        .banner01,.banner02{
+            margin-bottom:6px;
+        }
+        /* 배너스타일 끝 */
     </style>
 </head>
 <body>
@@ -205,10 +226,57 @@
             </div>           
        </div>
        <div class="banner">
-           배너
+           <div class="banner01">
+               <a href="#">
+                   <img src="./images/banner01.jpg" alt="배너1">
+               </a>
+           </div>
+           <div class="banner02">
+            <a href="#">
+                <img src="./images/banner02.jpg" alt="배너2">
+            </a>
+           </div>
+           <div class="banner03">
+            <a href="#">
+                <img src="./images/banner03.jpg" alt="배너3">
+            </a>
+           </div>
        </div>
        <div class="notice">
-           게시판
+           <div class="title">
+               <h2>
+                   Notice
+               </h2>
+               <h3>
+                   <a href="#">
+                       더보기
+                   </a>
+               </h3>
+           </div>
+           <div class="list01">
+               <p class="doc-tit">
+                   <a href="#">
+                    2021 SUMMER EVENT!!
+                   </a>
+               </p>
+               <p class="doc-date">
+                   <a href="#">
+                    2021.06.15
+                   </a>
+               </p>
+           </div>
+           <div class="list02">
+                <p class="doc-tit">
+                    <a href="#">
+                    [인천 서구청점 오픈] 인천지하철 2호선 서구청역에 새로운 할리스매장이 오픈합니다
+                    </a>
+                </p>
+                <p class="doc-date">
+                    <a href="#">
+                    2021.05.20
+                    </a>
+                </p>
+           </div>
        </div>
        <div class="footer">
            푸터
