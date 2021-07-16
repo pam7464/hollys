@@ -155,9 +155,6 @@
             margin-top:16px;
             margin-bottom:16px;
             height:60px;
-            border-bottom-width:1px;
-            border-bottom-color:#333333;
-            border-bottom-style:solid;
         }
         .title>h2{
             float:left;
@@ -210,6 +207,41 @@
             margin-top:-7px;
         }
         /* 게사판 끝 */
+
+        /* 푸터시작 */
+        .fran{
+            float:left;
+            width:225px;
+            height:39px;
+            background:#01c982;            
+        }
+        .aca{
+            float:right;
+            width:135px;
+            height:39px;
+            background:#ff1800;            
+        }
+        .fran,.aca{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            border-top-width:1px;
+            border-bottom-width:1px;
+            border-top-color:#333333;
+            border-bottom-color:#333333;
+            border-top-style:solid;
+            border-bottom-style:solid;
+        }
+
+
+        .fran>a,.aca>a{
+            font-family:'NanumGothic';
+            font-weight:700;
+            font-size:14px;
+            color:#ffffff;
+            text-decoration:none;
+        }
+        /* 푸터끝 */
     </style>
 </head>
 <body>
@@ -340,7 +372,14 @@
            </div>
        </div>
        <div class="footer">
-           푸터
+           <div class="fran-aca">
+            <div class="fran">
+                <a href="#">가맹문의 및 절차</a>
+            </div>
+            <div class="aca">
+                <a href="#">아카데미</a>
+            </div>
+           </div>
        </div>
        <div class="tmp">
             <a href="#">
