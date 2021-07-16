@@ -12,7 +12,9 @@
         .wrap{
             width:360px;
             height:1768px;       
-        }  
+        } 
+        
+        /* 헤더의 시작 */
         .header{
             width:360px;
             height:56px;
@@ -23,7 +25,7 @@
             font-family:'Noto Sans KR';
             font-weight:900;
             font-size:32px;
-            padding-top:5px;
+            padding-top:3px;
         }      
         .logo>a{
             color:#ffffff;
@@ -33,7 +35,49 @@
             position:absolute;
             top:19px;
             right:6px;
+            width:20px;
+            height:18px;
         }
+        .line{
+            width:20px;
+            height:3px;
+            background:#ffffff;
+            margin-bottom:4px;
+        }
+        /* 헤더의 끝 */
+
+        /* tmp의 시작 */
+        .tmp{
+            position:fixed;
+            top:19px;
+            left:6px;
+            width:80px;
+            height:20px;
+            background:#ff1800;
+            border-radius:10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .tmp>a{
+            font-size:10px;
+            color:#ffffff;
+            text-decoration:none;
+        }
+        /* tmp의 끝 */
+
+        /* 슬라이더 시작 */
+        .slider{
+            position:relative;
+            height:450px;
+        }
+        .slider-img>a>img{
+            position:absolute;
+            left:0;
+            top:0;
+        }
+
+        /* 슬라이더 끝 */
     </style>
 </head>
 <body>
@@ -45,13 +89,36 @@
                 </a>
             </h1>
             <div class="btn-nav">
-                <span>선</span>
-                <span>선</span>
-                <span>선</span>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
        </div>
        <div class="slider">
-           슬라이더
+           <div class="slider-img">
+                <a href="#">
+                    <img class="slider01" src="./images/slider01.jpg" alt="슬라이더1">
+                </a>
+                <a href="#">
+                    <img class="slider02" src="./images/slider02.jpg" alt="슬라이더2">
+                </a>
+                <a href="#">
+                    <img class="slider03" src="./images/slider03.jpg" alt="슬라이더3">
+                </a>
+                <a href="#">
+                    <img class="slider04" src="./images/slider04.jpg" alt="슬라이더4">
+                </a>
+                <a href="#">
+                    <img  class="slider05" src="./images/slider05.jpg" alt="슬라이더5">
+                </a>
+           </div>
+           <div class="btn-page">
+               <span>원</span>
+               <span>원</span>
+               <span>원</span>
+               <span>원</span>
+               <span>원</span>
+           </div>
        </div>
        <div class="link-icons">
            링크아이콘
@@ -64,6 +131,11 @@
        </div>
        <div class="footer">
            푸터
+       </div>
+       <div class="tmp">
+            <a href="#">
+                창업설명회
+            </a>           
        </div>
     </div>
 </body>
