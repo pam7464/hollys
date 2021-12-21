@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bx-slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <title>할리스</title>
+    <style>    
+        /* 기본스타일     */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        .clearfix::after{
+            content:'';
+            display:block;
+            clear:both;
+        }   
+        :root{
+            font-family:'Roboto','Noto Sans KR',sans-serif;
+            font-weight:400;
+            font-size:14px;
+            color:#666666;
+            /* line-height:1.5em; */
+        } 
+        .container{
+            width:960px;
+            margin:0 auto;
+            padding:0 12px;
+        }
+
+        /* 스킵메뉴 */
+        .skip-menu a{            
+            display:block;
+            width:0;
+            height:0;
+            /* padding:12px; */
+            background-color:#666666;
+            font-weight:900;
+            font-size:32px;
+            color:#fff;
+            text-align:center;
+            
+            overflow:hidden;
+        }
+        .skip-menu a:focus{
+            width:auto;
+            height:auto;
+            padding:12px;
+        }
+
+        /* wrapper style */
+        .wrap{
+            overflow:hidden;
+        }
+
+        /* header style */
+        .header{
+            border-bottom:2px solid #ba000c;
+        }
+        
+
+    </style>
+</head>
+<body>    
+    <!-- 스팁메뉴 -->
+    <div class="skip-menu">
+        <a href="#franchise">플랜차이즈 바로가기</a>
+        <a href="#membership">할리스 멤버십 바로가기</a>
+        <a href="#live">할리스 라이브 바로가기</a>
+    </div>
+
+    <!-- wrapper -->
+    <section class="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="contents grid-container">
+                    <h1>
+                        <strong>할리스 커피</strong>
+                        <div class="img-box">
+                            <a href="./index.html"><img src="./images/logo.gif" alt="할리스 로고"></a>
+                        </div>
+                    </h1>
+                    <nav class="quick-nav01">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-user-tie"></i> 창업설명회</a></li>
+                            <li><a href="#"><i class="fas fa-graduation-cap"></i> 아카데미</a></li>
+                            <li><a href="#"><i class="fas fa-building"></i> 기업특판</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="quick-nav02">
+                        <ul>
+                            <li><a href="#">멤버십 로그인</a></li>
+                            <li><a href="#">멤버십 가입</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">中文</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="main-nav">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>Menu</span>
+                                    <span>메뉴</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>HOLLYS Mall</span>
+                                    <span>할리스 몰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Membership</span>
+                                    <span>멤버십</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>HOLLYS News</span>
+                                    <span>이벤트 및 공지</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Store</span>
+                                    <span>매장</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>HOLLYS is</span>
+                                    <span>할리스 소개</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider();
+        });
+    </script>
+</body>
+</html>
