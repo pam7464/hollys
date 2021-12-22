@@ -28,6 +28,9 @@
             color:#666666;
             /* line-height:1.5em; */
         } 
+        .sec{
+            margin-bottom:36px;
+        }
         .container{
             width:960px;
             margin:0 auto;
@@ -186,7 +189,47 @@
             grid-template-columns: 3fr 5fr 3fr;
         }
 
-
+        .fran-mall-sto h3{
+            font-weight:700;
+            font-size:24px;
+            color:#333
+        }
+        .mall h3{
+            margin-bottom:12px;            
+            color:#ba000c;
+        }
+        .mall>p{
+            font-weight:500;
+            font-size:15px;
+            text-indent:26px;
+        }
+        .mall ul{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+        }
+        .mall a{
+            display:block;
+            height:214px;
+            position:relative;
+        }
+        .mall a .img-box{
+            border-right:5px dotted #666666;
+            position:absolute;
+            left:10%;
+            right:10%;
+            top:50%;
+            transform:translateY(-66%);
+        }
+        .mall a p{
+            position:absolute;
+            left:0;
+            right:0;
+            bottom:15%;
+            text-align:center;            
+        }
+        .mall a:hover p{
+            color:#ba000c;
+        }
 
     </style>
 </head>
@@ -303,19 +346,43 @@
                 <div class="contents grid-container">
                     
                     <article class="art franchise">
-                        <h3><i class="fas fa-user-tie"></i>Franchise</h3>
+                        <h3><i class="fas fa-user-tie"></i> Franchise</h3>
                         <div class="img-box">
                             <a href="#"><img src="./images/img-fran.gif" alt="프랜차이즈"></a>                            
                         </div>
                     </article>
                     <article class="art mall">
-                        <h3><i class="fas fa-gift"></i>Franchise</h3>
-                        <div class="img-box">
-                            <a href="#"><img src="./images/img-fran.gif" alt="프랜차이즈"></a>                            
-                        </div>
+                        <h3><i class="fas fa-gift"></i> HOLLYS Mall</h3>
+                        <p>할리스의 다양한 상품들을 만나보세요</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img-box">
+                                        <img src="./images/img-mall01.png" alt="생딸기 주스">
+                                    </div>
+                                    <p>생딸기 주스</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-box">
+                                        <img src="./images/img-mall02.png" alt="딸기 생크림">
+                                    </div>
+                                    <p>딸기 생크림</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-box">
+                                        <img src="./images/img-mall03.png" alt="딸기바스크치즈">
+                                    </div>
+                                    <p>딸기바스크치즈</p>
+                                </a>
+                            </li>
+                        </ul>
                     </article>
                     <article class="art store">
-                        <h3><i class="fas fa-map-marker-alt"></i>Store</h3>
+                        <h3><i class="fas fa-map-marker-alt"></i> Store</h3>
                         <div class="img-box">
                             <a href="#"><img src="./images/img-sto.jpg" alt="매장찾기"></a>                            
                         </div>
