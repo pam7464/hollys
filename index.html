@@ -236,12 +236,38 @@
                 </div>
             </div>
         </header>
+        <section class="sec main-slider">
+            <div class="container">
+                <div class="contents">
+                    <div class="slider">
+                        <div class="img-box">
+                            <a href="#"><img src="./images/main-banner01.jpg" alt="매인베너1"></a>
+                        </div>
+                        <div class="img-box">
+                            <a href="#"><img src="./images/main-banner02.jpg" alt="매인베너2"></a>
+                        </div>
+                        <div class="img-box">
+                            <a href="#"><img src="./images/main-banner03.jpg" alt="매인베너3"></a>
+                        </div>
+                        <div class="img-box">
+                            <a href="#"><img src="./images/main-banner04.jpg" alt="매인베너4"></a>
+                        </div>
+                        <div class="img-box">
+                            <a href="#"><img src="./images/main-banner05.jpg" alt="매인베너5"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
 
     <script>
         $(document).ready(function(){
-            $('.slider').bxSlider();
+            $('.slider').bxSlider({
+                mode:'fade',
+                speed:1000,
+            });
         });
     </script>
 </body>
