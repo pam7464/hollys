@@ -186,7 +186,7 @@
 
         /* franchise-mall-stor */
         .fran-mall-sto .grid-container{
-            grid-template-columns: 3fr 5fr 3fr;
+            grid-template-columns: 1fr 2fr 1fr;
         }
 
         .fran-mall-sto h3{
@@ -213,12 +213,15 @@
             position:relative;
         }
         .mall a .img-box{
-            border-right:5px dotted #666666;
+            border-right:2px dotted #ccc;
             position:absolute;
             left:10%;
             right:10%;
             top:50%;
             transform:translateY(-66%);
+        }
+        .mall li:last-child a .img-box{
+            border:none;
         }
         .mall a p{
             position:absolute;
@@ -231,6 +234,19 @@
             color:#ba000c;
         }
 
+        /* banner */
+        .banner .img-box:first-child{
+            grid-column:1/7;
+        }
+        .banner .img-box:last-child{
+            grid-column:7/13;
+        }
+
+        /* notice */
+        .notice .grid-container{
+            grid-template-columns:1fr 1fr 1fr 1fr;
+        }
+        
     </style>
 </head>
 <body>    
@@ -344,7 +360,6 @@
             </h2>
             <div class="container">
                 <div class="contents grid-container">
-                    
                     <article class="art franchise">
                         <h3><i class="fas fa-user-tie"></i> Franchise</h3>
                         <div class="img-box">
@@ -390,7 +405,61 @@
                 </div>
             </div>
         </section>
-
+        <!-- banner -->
+        <section class="sec banner">
+            <h2 class="sec-tit hidden-tit">멤버십 / 카드 바로가기</h2>
+            <div class="container">
+                <div class="contents grid-container">
+                    <div class="img-box"><a href="#"><img src="./images/img-banner01.jpg" alt="할리스 멤버십"></a></div>
+                    <div class="img-box"><a href="#"><img src="./images/img-banner02.jpg" alt="할리스 카드"></a></div>
+                </div>
+            </div>
+        </section>
+        <!-- notice -->
+        <section class="sec notice">
+            <h2 class="sec-tit hidden-tit">게시판</h2>
+            <div class="container">
+                <div class="contents grid-container">
+                    <article class="art academy">
+                        <h3><i class="fas fa-pencil-alt"></i> Coffee Academy</h3>
+                        <p><a href="#">할리스 아카데미와 함께하는 즐거운 커피 여행!</a></p>
+                        <p><a href="#"><i class="fas fa-play-circle"></i> 바로가기</a></p>
+                    </article>
+                    <article class="art solution">
+                        <h3><i class="fas fa-briefcase"></i> Hollys B2B Solution</h3>
+                        <p><a href="#">할리스 F&B는 20년의 커피 노하우를 기반으로 한 할리스 B2B 솔루션을 소개합니다.</a></p>
+                        <p><a href="#"><i class="fas fa-play-circle"></i> 바로가기</a></p>
+                    </article>
+                    <article class="art news">
+                        <h3><i class="fas fa-volume-up"></i> News <i class="fas fa-play-circle"></i></h3>
+                        <ul>
+                            <li>
+                                <a href="#">개인정보 처리방침 변경안내</a>
+                                <a href="#">10-06</a>
+                            </li>
+                            <li>
+                                <a href="#">중간배당 기준일 공고</a>
+                                <a href="#">10-14</a>
+                            </li>
+                            <li>
+                                <a href="#">할리스카드 이용약관 변경안내</a>
+                                <a href="#">11-19</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="art quick-icons">
+                        <h3 class="hidden-tit">창업안내, 아카데미 강좌, 고객문의 바로가기</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
     </section>
 
 
